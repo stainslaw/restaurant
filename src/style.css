@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgb(255, 255, 255);
+}
+
+.bgimage {
+    display: grid;
+    background-image: url(./pexels-pixabay-260922.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    height: 11vh;
+    background-color: black;
+    opacity: .4;
+}
+
+.main-content {
+    height: 77vh;
+    border-top: var(--main-color) 2px solid;
+    border-bottom: var(--main-color) 2px solid;
+    width: auto;
+}
+
+
+.footer {
+    height: 11vh;
+    background-color: black;
+    opacity: .4;
+}
+
+
+
+
