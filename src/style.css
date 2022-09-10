@@ -6,11 +6,15 @@
     font-family: "Montserrat", sans-serif;
     text-align: center;
     list-style: none;
+    box-sizing: border-box;
 }
 
 :root {
     --main-color: rgb(255, 255, 255);
-    --gold: v
+    --gold: #c59d5f;
+    --transparent-black: rgba(0, 0, 0, 0.404);
+    --main-black-bg: rgba(0, 0, 0, 0.199);
+    --main-and-about-bg: rgba(0, 0, 0, 0.39);;
 }
 
 #content {
@@ -20,15 +24,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(10, 10, 10);
-    text-transform: uppercase;
 }
+
+/* .main {
+    background: var(--main-color);
+    margin-top: 36vh;
+    overflow: scroll;
+} */
+
+/* ----- NAVBAR -----  */
 
 nav {
     display: flex;
     height: 12vh;
     border-bottom: var(--main-color) 2px solid;
     color: var(--main-color);
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: var(--transparent-black);
+    text-transform: uppercase;
 }
 
 ul {
@@ -44,26 +56,176 @@ ul {
   }  
 
   li:hover {
-    border-bottom: 2px solid #c59d5f;
+    border-bottom: 2px solid var(--gold);
     padding-bottom: 4px;
     cursor: pointer;
   }
 
-/*
+/* ----- MAIN -----  */
 
-.main-content {
-    height: 77vh;
-    border-top: var(--main-color) 2px solid;
-    border-bottom: var(--main-color) 2px solid;
-    width: auto;
+main {
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-black-bg);
+}
+
+p, h1 {
+    color: white;
+}
+
+button {
+    font-size: 17px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding: 16px;
+    background: var(--gold);
+    border: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s ease;
+  }
+
+  button:hover {
+    color: black;
+  }
+
+  main::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    outline: 1px solid var(--main-color);
+  }
+
+/* ----- MENU PAGE -----  */
+
+main-menu {
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-and-about-bg);
+}
+
+main-menu h2 {
+    color: var(--main-color);
+    font-weight: lighter;
+    margin-top: 5vh;
+    line-height: 80%;
+    letter-spacing: 7px;
+    font-size: 19px;
+}
+
+main-menu h1 {
+    font-size: 75px;
+}
+
+/* ----- ABOUT PAGE -----  */
+
+main-about {
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-and-about-bg);
+}
+
+main-about h2 {
+    color: var(--main-color);
+    font-weight: lighter;
+    margin-top: 5vh;
+    line-height: 80%;
+    letter-spacing: 7px;
+    font-size: 19px;
+}
+
+main-about p {
+    font-size: 20px;
+    letter-spacing: 0px;
+    margin: 5.5vh 27vw;
+    line-height: 170%;
+}
+
+main-about h1 {
+    font-size: 75px;
 }
 
 
-.footer {
-    height: 11vh;
-    background-color: black;
-    opacity: .4;
-} */
+
+/* ----- FOOTER -----  */
+
+
+footer {
+    height: 12vh;
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color: var(--transparent-black);
+    display: flex;
+    letter-spacing: 1px;
+} 
+
+footer h4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+/* ----- TYPOGRAPHY -----  */
+
+h1 {
+    font-size: 69px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 8px;
+}
+
+h3 {
+    line-height: 150%;
+    font-size: 21px;
+    color: var(--main-color);
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 200%;
+    font-size: 21px;
+    letter-spacing: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    width: 600px;
+    border: 2px solid var(--gold);
+    margin: 25px auto;
+}
+
+.menu-hr {
+    border: 1px solid var(--gold)
+}
+
+
+
+
+
 
 
 
