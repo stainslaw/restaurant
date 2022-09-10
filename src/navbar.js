@@ -1,4 +1,5 @@
-import { createHtmlElement, $content} from "./index";
+import {createHtmlElement, $content} from "./index";
+
 
 function render() {
     const navItems = ["home", "menu", "about"];
