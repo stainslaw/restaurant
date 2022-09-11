@@ -10,6 +10,7 @@ function render() {
     );
     $footer.appendChild($p);
     $content.appendChild($footer);
+
 }
 
 export { render as renderFooter };
