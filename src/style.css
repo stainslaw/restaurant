@@ -85,7 +85,8 @@ button {
   }
 
   button:hover {
-    color: black;
+    color: var(--gold);
+    background: var(--main-color);
   }
 
   main-menu::-webkit-scrollbar {
