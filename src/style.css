@@ -26,12 +26,6 @@
     background-color: rgb(10, 10, 10);
 }
 
-/* .main {
-    background: var(--main-color);
-    margin-top: 36vh;
-    overflow: scroll;
-} */
-
 /* ----- NAVBAR -----  */
 
 nav {
@@ -94,13 +88,13 @@ button {
     color: black;
   }
 
-  main::-webkit-scrollbar {
-    width: 1em;
+  main-menu::-webkit-scrollbar {
+    width: 10px;
   }
 
-  main::-webkit-scrollbar-thumb {
+  main-menu::-webkit-scrollbar-thumb {
     background-color: var(--gold);
-    outline: 1px solid var(--main-color);
+
   }
 
 /* ----- MENU PAGE -----  */
@@ -111,6 +105,18 @@ main-menu {
     flex-direction: column;
     align-items: center;
     background: var(--main-and-about-bg);
+    overflow-y: scroll;
+
+}
+
+main-menu p {
+    letter-spacing: normal;
+    font-size: 21px;
+    text-align: start;
+}
+
+main-menu h1 {
+    font-size: 75px;
 }
 
 main-menu h2 {
@@ -122,8 +128,10 @@ main-menu h2 {
     font-size: 19px;
 }
 
-main-menu h1 {
-    font-size: 75px;
+main-menu h3 {
+    color: var(--gold);
+    font-size: 33px;
+    font-weight: bold;
 }
 
 /* ----- ABOUT PAGE -----  */
@@ -178,6 +186,11 @@ footer h4 {
     margin: auto;
     font-weight: lighter;
     font-size: 19px;
+    transition: .2s ease-in-out;
+}
+
+footer h4:hover {
+    letter-spacing: 2px;
 }
 
 /* ----- TYPOGRAPHY -----  */
@@ -218,8 +231,10 @@ hr {
     margin: 25px auto;
 }
 
-.menu-hr {
-    border: 1px solid var(--gold)
+menu-hr {
+    border: 1px solid var(--gold);
+    width: 400px;
+    margin: 30px auto;
 }
 
 
